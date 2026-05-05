@@ -1,0 +1,283 @@
+:root {
+  --bg: #f3f5f8;
+  --card: #ffffff;
+  --text: #0f2747;
+  --muted: #6f7f93;
+  --line: #d8dee8;
+  --accent: #1ea672;
+  --accent-alt: #c7a44d;
+  --danger: #d14b4b;
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app-shell {
+  max-width: 560px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  padding: 20px 14px 40px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(15, 39, 71, 0.08);
+  padding: 18px;
+}
+
+.hero h1 {
+  margin: 8px 0;
+  line-height: 1.25;
+}
+
+.hero p {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.muted-zh {
+  color: var(--muted);
+  margin-top: -2px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  padding: 14px;
+  font-weight: 700;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--accent), #2c6ed5);
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #edf2fa;
+  color: var(--text);
+}
+
+.btn:disabled {
+  background: #e7ebf2;
+  color: #8390a2;
+  cursor: not-allowed;
+}
+
+.section-title {
+  margin: 8px 0 14px;
+}
+
+.list {
+  display: grid;
+  gap: 12px;
+}
+
+.list-item {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+  background: var(--card);
+}
+
+.list-item h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge {
+  background: #edf7f3;
+  color: #0f7c55;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+}
+
+.progress-wrap {
+  margin: 8px 0 16px;
+}
+
+.progress-track {
+  height: 10px;
+  border-radius: 99px;
+  background: #e5eaf2;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-alt), var(--accent));
+}
+
+.question-card h2 {
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.skill-tags {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  padding: 5px 10px;
+  background: #fafbfd;
+}
+
+.options {
+  display: grid;
+  gap: 10px;
+}
+
+.option-btn,
+.chip {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.option-btn.selected,
+.chip.selected {
+  border-color: #5d86c7;
+  background: #f0f5ff;
+}
+
+.pair-grid {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.pair-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.drop-zone {
+  min-height: 42px;
+  border: 1px dashed #aac2e7;
+  border-radius: 10px;
+  padding: 8px;
+  background: #f8fbff;
+}
+
+.draggable {
+  border: 1px solid #bfd0ea;
+  padding: 8px;
+  border-radius: 10px;
+  background: #fff;
+  cursor: grab;
+  margin-bottom: 8px;
+}
+
+.match-target {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sortable {
+  display: grid;
+  gap: 8px;
+}
+
+.sortable-item {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: grab;
+}
+
+.sentence-zone {
+  min-height: 52px;
+  border: 1px dashed #9ab4dd;
+  border-radius: 12px;
+  padding: 8px;
+  margin: 10px 0;
+  background: #f7faff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sentence-bank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.slider-wrap {
+  margin-top: 14px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+.feedback {
+  margin-top: 14px;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  background: #f8fafc;
+}
+
+.feedback h4 {
+  margin: 0 0 8px;
+}
+
+.ok {
+  color: #137d56;
+}
+
+.almost {
+  color: #a26b00;
+}
+
+.fail {
+  color: var(--danger);
+}
+
+.summary-list {
+  list-style: none;
+  margin: 8px 0;
+  padding: 0;
+}
+
+.summary-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #eef1f6;
+}
